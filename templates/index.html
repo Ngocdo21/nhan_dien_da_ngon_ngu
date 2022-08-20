@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png"
+		href="https://caktus-website-production-2015.s3.amazonaws.com/static/images/socialgood-icon.png">
+    <title>Nhận Diện Ngôn Ngữ</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="title">
+            <h1>Nhận Diện Đa Ngôn Ngữ</h1>
+        </div>
+        <!-- Form -->
+        <div class="container">
+            <form action="{{url_for ('send') }}" , method="POST">
+                <br><br>
+
+                {% if ans is none %}
+
+                <textarea name="text" class="text_area" cols="100" rows="15" required="true"></textarea>
+
+
+                {%else%}
+
+                <textarea name="text" class="text_area" cols="100" rows="15" required="true">{{text}}</textarea>
+
+
+                {% endif %}
+
+                <br><br>
+                <button type="submit" class="btn btn-primary btn-lg" value="predict" id="btn"> XÁC NHẬN</button>
+
+
+            </form>
+
+            {% if ans is not none %}
+            <div class="result">
+
+                <label for="Result">Ngôn ngữ: {{ans}}</label>
+            </div>
+
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>

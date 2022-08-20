@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: #f5f8ff;
+    background-image: url("https://images.hdqwalls.com/wallpapers/bthumb/ford-mustang-bbs-motorsport-5k-oa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+select:invalid {
+    color: gray;
+}
+
+.result {
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+
+.main-container {
+    background-color: #ffffff;
+    width: 70%;
+    min-width: 650px;
+    position: relative;
+    margin: 30px auto;
+    padding: 50px 20px;
+    border-radius: 7px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    background-color: #ffffff;
+
+}
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+
+textarea {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    max-height: 300px;
+    outline: none;
+    padding: 50px 0px 30px 50px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: dashed 3px #cccc;
+    color: #12334e;
+}
+
+#btn {
+    border: none;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    background-color: #bd4f6c;
+    background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    max-width: 250px;
+    padding: 18px 40px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+#btn:hover {
+    transform: scaleX(1.05);
+}
+
+form {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result {
+    text-align: center;
+}
+
+.result h1 {
+    font-size: 25px;
+    color: #000;
+}
+
+.result label {
+    font-size: 20px;
+    font-weight: 100;
+}
